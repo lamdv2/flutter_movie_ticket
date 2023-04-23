@@ -49,7 +49,7 @@ dependencies:
   # firebase_auth:
   firebase_auth: ^4.2.9
   #firebase_core:
-  firebase_core: ^2.7.0
+  firebase_core: ^2.10.0
 
 dev_dependencies:
   flutter_test:
