@@ -32,13 +32,16 @@ class SearchBar extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    const Padding(
-                      padding: EdgeInsets.only(
+                    Padding(
+                      padding: const EdgeInsets.only(
                           left: kMediumPadding, right: kMediumPadding),
-                      child: Icon(
-                        FontAwesomeIcons.search,
-                        size: kDefaultIconSize,
-                        color: Colors.white,
+                      child: GestureDetector(
+                        onTap: () {},
+                        child: const Icon(
+                          FontAwesomeIcons.search,
+                          size: kDefaultIconSize,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                     Expanded(
