@@ -14,7 +14,7 @@ class _TitleHomeState extends State<TitleHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(kMediumPadding),
+      padding: const EdgeInsets.only(left: kMediumPadding),
       alignment: Alignment.centerLeft,
       child: Text(widget.title, style: AppStyles.h2.copyWith(fontWeight: FontWeight.w500),),
     );
