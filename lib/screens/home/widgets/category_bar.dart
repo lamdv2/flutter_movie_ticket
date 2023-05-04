@@ -25,7 +25,7 @@ class _CategoryBarState extends State<CategoryBar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: kTopPadding, right: kDefaultPadding),
+      padding: const EdgeInsets.only(left: kTopPadding, right: kDefaultPadding, bottom: kMediumPadding),
       child: SizedBox(
         height: widget.size.height / 15,
         child: ListView.builder(
