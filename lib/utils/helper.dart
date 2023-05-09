@@ -32,7 +32,18 @@ mixin AssetHelper {
   static const String imgTopUp = 'assets/images/x2/top_up.png';
 
   // Assets in images x3
+  static const String imgInfo = 'assets/images/x3/info.jpg';
+  static const String imgBgr = 'assets/images/x3/bgr.jpg';
+
   static const String imgTrailer1 = 'assets/images/x3/trailer1.png';
   static const String imgTrailer2 = 'assets/images/x3/trailer2.png';
+  static const String imgMovieBanner = 'assets/images/x3/movie_banner.png';
+  static const String imgMoviePoster = 'assets/images/x3/movie_poster.png';
+  static const String imgMoviePoster2 = 'assets/images/x3/movie_poster2.png';
+  static const String imgMoviePoster3 = 'assets/images/x3/movie_poster3.png';
 
+  static const String imgCastJack = 'assets/images/x3/cast_jack.png';
+  static const String imgCastJohn = 'assets/images/x3/cast_john.png';
+  static const String imgCastSara = 'assets/images/x3/cast_sara.png';
+  static const String imgCastTara = 'assets/images/x3/cast_tara.png';
 }

@@ -9,11 +9,9 @@ class CategoryBar extends StatefulWidget {
   const CategoryBar({
     super.key,
     required this.size,
-    required this.genres,
   });
 
   final Size size;
-  final List<Movie> genres;
 
   @override
   State<CategoryBar> createState() => _CategoryBarState();
@@ -30,7 +28,7 @@ class _CategoryBarState extends State<CategoryBar> {
         height: widget.size.height / 15,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: widget.genres.length,
+          itemCount: movies.length,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
@@ -57,7 +55,7 @@ class _CategoryBarState extends State<CategoryBar> {
                         borderRadius: kDefaultBorderRadius,
                       ),
                 child: Text(
-                  widget.genres[index].getType(),
+                  movies[index].getType(),
                   style: AppStyles.h4,
                 ),
               ),

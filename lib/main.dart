@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:movie_ticket/screens/login/auth_page.dart';
 import 'package:movie_ticket/themes/app_colors.dart';
 import 'package:movie_ticket/themes/app_styles.dart';
@@ -17,6 +18,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    //   statusBarColor: Colors.deepPurple,
+    //   statusBarBrightness: Brightness.dark,
+    // ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -27,7 +32,7 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(
           bodyColor: AppColors.white,
           displayColor: AppColors.white,
-        )
+        ),
       ),
       routes: routes,
       home: const AuthPage(),

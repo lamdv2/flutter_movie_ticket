@@ -29,10 +29,10 @@ class CasterItem extends StatelessWidget {
             width: size.width / 4.5,
             height: size.height / 6.5,
             decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(casters.profileImgCast),
-                ),
-                borderRadius: kBigBorderRadius),
+              image: DecorationImage(
+                image: AssetImage(casters.profileImgCast),
+              ),
+              borderRadius: kBigBorderRadius),
           ),
         ),
         Padding(

@@ -15,8 +15,8 @@ class AboutTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
+        top: kTop32Padding,
         left: kMediumPadding,
-        top: kMediumPadding,
         bottom: kTopPadding,
       ),
       child: Text(

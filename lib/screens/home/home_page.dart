@@ -29,8 +29,6 @@ void signUserOut() {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<Movie> movies = [];
-
   @override
   void initState() {
     // TODO: implement initState
@@ -53,15 +51,9 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             HomeHeader(size: size),
             SearchBar(size: size),
-            CategoryBar(
-              size: size,
-              genres: movies,
-            ),
+            CategoryBar(size: size),
             const TitleHome(title: 'Now Playing'),
-            CarouselSliderFirm(
-              size: size,
-              movies: movies,
-            ),
+            CarouselSliderFirm(size: size),
             const Padding(
               padding: EdgeInsets.only(
                 top: kTop32Padding,

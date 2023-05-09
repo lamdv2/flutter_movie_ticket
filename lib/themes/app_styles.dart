@@ -6,15 +6,17 @@ class FontFamily {
 
 class AppStyles {
   static TextStyle h1 = const TextStyle(
-      fontFamily: FontFamily.mont, fontSize: 109.66, color: Colors.white);
+      fontFamily: FontFamily.mont, fontSize: 32.00, color: Colors.white);
   static TextStyle h2 = const TextStyle(
-      fontFamily: FontFamily.mont, fontSize: 67.77, color: Colors.white);
+      fontFamily: FontFamily.mont, fontSize: 24.00, color: Colors.white);
   static TextStyle h3 = const TextStyle(
-      fontFamily: FontFamily.mont, fontSize: 41.89, color: Colors.white);
+      fontFamily: FontFamily.mont, fontSize: 18.72, color: Colors.white);
   static TextStyle h4 = const TextStyle(
-      fontFamily: FontFamily.mont, fontSize: 25.89, color: Colors.white);
+      fontFamily: FontFamily.mont, fontSize: 16.00, color: Colors.white);
   static TextStyle h5 = const TextStyle(
-      fontFamily: FontFamily.mont, fontSize: 16, color: Colors.white);
+      fontFamily: FontFamily.mont, fontSize: 13.28, color: Colors.white);
+  static TextStyle h5Light = const TextStyle(
+      fontFamily: FontFamily.mont, fontSize: 12, color: Colors.white70, fontWeight: FontWeight.normal);
   static TextStyle h6 = const TextStyle(
-      fontFamily: FontFamily.mont, fontSize: 9.89, color: Colors.white);
+      fontFamily: FontFamily.mont, fontSize: 10.72, color: Colors.white);
 }

@@ -6,17 +6,15 @@ import 'package:movie_ticket/themes/app_styles.dart';
 import '../../../common/widgets/stateful/list_star_widget.dart';
 import '../../../models/movie.dart';
 import '../../../utils/constants.dart';
-import '../../movie_detail/movie_detail_page.dart';
+import '../../movieDetail/movie_detail_page.dart';
 
 class CarouselSliderFirm extends StatefulWidget {
   const CarouselSliderFirm({
     super.key,
-    required this.movies,
     required this.size,
   });
 
   final Size size;
-  final List<Movie> movies;
 
   @override
   State<CarouselSliderFirm> createState() => _CarouselSliderFirmState();
@@ -36,7 +34,7 @@ class _CarouselSliderFirmState extends State<CarouselSliderFirm> {
           enlargeCenterPage: true,
           viewportFraction: 0.6,
         ),
-        items: widget.movies.map((movie) {
+        items: movies.map((movie) {
           return Builder(
             builder: (BuildContext context) {
               return GestureDetector(

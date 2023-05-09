@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_ticket/screens/selectCinema/select_cinema_page.dart';
 
 import '../../../models/movie.dart';
 import '../../../utils/constants.dart';
@@ -25,11 +26,16 @@ class ComingSoon extends StatelessWidget {
             .take(3)
             .map((e) => Builder(builder: (context) {
           return Expanded(
-            child: Container(
-              padding: const EdgeInsets.symmetric(
-                horizontal: kTopPadding,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed(SelectCinemaPage.routeName);
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: kTopPadding,
+                ),
+                child: Image.asset(e.background.toString()),
               ),
-              child: Image.asset(e.background.toString()),
             ),
           );
         }))

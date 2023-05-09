@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../themes/app_styles.dart';
 import '../../../utils/constants.dart';
 import '../../../utils/helper.dart';
-import '../../profile/profile_screen.dart';
-import '../home_screen.dart';
+import '../../profile/profile_page.dart';
+import '../home_page.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
@@ -45,7 +45,7 @@ class HomeHeader extends StatelessWidget {
               child: CircleAvatar(
                 radius: size.height / 24,
                 backgroundImage:
-                const AssetImage(AssetHelper.imgProfile),
+                const AssetImage(AssetHelper.imgInfo),
               ),
             )
           ],
