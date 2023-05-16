@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:movie_ticket/screens/login/auth_page.dart';
+import 'package:movie_ticket/screens/login/login_page.dart';
 import 'package:movie_ticket/themes/app_colors.dart';
 import 'package:movie_ticket/themes/app_styles.dart';
 import 'package:movie_ticket/utils/constants.dart';
@@ -21,13 +23,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     final userName = ModalRoute.of(context)!.settings.arguments;
-    const a = 'f';
     return Scaffold(
       appBar: AppBar(
-        actions: const [
+        actions: [
           IconButton(
-            onPressed: signUserOut,
-            icon: Icon(Icons.logout),
+            onPressed: () {
+              signUserOut();
+              Navigator.pushNamed(context, AuthPage.routeName);
+            },
+            icon: const Icon(Icons.logout),
           ),
         ],
         backgroundColor: AppColors.darkBackground,

@@ -3,7 +3,10 @@ import 'package:get/get.dart';
 import '../../main.dart';
 
 class Login extends StatefulWidget {
+  const Login({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _LoginState createState() => _LoginState();
 }
 
@@ -23,8 +26,10 @@ class _LoginState extends State<Login> {
           children: <Widget>[
             TextButton(
                 style: TextButton.styleFrom(
-                  primary: Colors.blue,
-                  onSurface: Colors.red,
+                  // primary: Colors.blue,
+                  // onSurface: Colors.red,
+                  foregroundColor: Colors.blue,
+                  disabledForegroundColor: Colors.red,
                 ),
                 onPressed: ()=> Get.off(const MyApp()),
                 child: const Text("Login")),

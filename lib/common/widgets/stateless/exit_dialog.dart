@@ -1,32 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../../themes/app_colors.dart';
-import '../../../utils/constants.dart';
 
-class ExitConfirmationDialog extends StatelessWidget {
-  const ExitConfirmationDialog({super.key});
+class ExitDialog extends StatelessWidget {
+  const ExitDialog({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        borderRadius: kDefaultBorderRadius,
-        color: AppColors.grey,
-      ),
-      child: AlertDialog(
-        title: const Text('Confirmation'),
-        content: const Text('Are you sure you want to exit?'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('Exit'),
-          ),
-        ],
-      ),
+    return AlertDialog(
+      title: const Text('Thoát ứng dụng',
+          style: TextStyle(color: AppColors.darkerBackground)),
+      content: const Text('Bạn có chắc muốn thoát ứng dụng?',
+          style: TextStyle(color: AppColors.darkerBackground)),
+      actions: [
+        TextButton(
+          child: const Text('Không',
+              style: TextStyle(color: AppColors.darkerBackground)),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        TextButton(
+          child: const Text('Có',
+              style: TextStyle(color: AppColors.darkerBackground)),
+          onPressed: () {
+            SystemNavigator.pop();
+          },
+        ),
+      ],
     );
   }
 }

@@ -28,7 +28,7 @@ class ComingSoon extends StatelessWidget {
           return Expanded(
             child: GestureDetector(
               onTap: () {
-                Navigator.of(context).pushNamed(SelectCinemaPage.routeName);
+                Navigator.of(context).pushNamed(SelectCinemaPage.routeName, arguments: e);
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(

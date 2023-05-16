@@ -5,15 +5,18 @@ import '../../../themes/app_colors.dart';
 import '../../../utils/constants.dart';
 
 class ArrowBackButton extends StatelessWidget {
-  const ArrowBackButton({
+  double topPadding;
+
+  ArrowBackButton({
     super.key,
+    required this.topPadding,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding:
-      const EdgeInsets.only(top: kTop32Padding, left: kTopPadding),
+      EdgeInsets.only(top: topPadding, left: kItemPadding),
       child: IconButton(
         onPressed: () {
           Navigator.of(context).pop();

@@ -7,9 +7,7 @@ import 'package:movie_ticket/screens/home/widgets/coming_soon.dart';
 import 'package:movie_ticket/screens/home/widgets/home_header.dart';
 import 'package:movie_ticket/screens/home/widgets/promo.dart';
 import 'package:movie_ticket/screens/home/widgets/search_bar.dart';
-import 'package:movie_ticket/screens/home/widgets/title.dart';
-import 'package:movie_ticket/themes/app_colors.dart';
-import 'package:movie_ticket/themes/app_styles.dart';
+import 'package:movie_ticket/common/widgets/stateful/title.dart';
 import 'package:movie_ticket/utils/constants.dart';
 
 class HomeScreen extends StatefulWidget {

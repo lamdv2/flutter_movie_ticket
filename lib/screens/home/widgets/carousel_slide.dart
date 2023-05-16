@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_ticket/themes/app_colors.dart';
 import 'package:movie_ticket/themes/app_styles.dart';
 
-import '../../../common/widgets/stateful/list_star_widget.dart';
+import '../../../common/widgets/stateless/list_star_widget.dart';
 import '../../../models/movie.dart';
 import '../../../utils/constants.dart';
 import '../../movieDetail/movie_detail_page.dart';

@@ -11,7 +11,14 @@ class Movie {
   List<Cast>? casters;
   List<String>? trailers;
 
-  Movie({required this.id, this.name, this.type, this.background, this.star, this.casters, this.trailers});
+  Movie(
+      {required this.id,
+      this.name,
+      this.type,
+      this.background,
+      this.star,
+      this.casters,
+      this.trailers});
 
   getType() {
     return type.toString();
@@ -21,16 +28,16 @@ class Movie {
     return background.toString();
   }
 
-  getStar(){
+  getStar() {
     return star.toString();
   }
 }
 
 List<Movie> movies = [];
 
-List<int> listIds = [1, 2, 3, 4, 5, 6];
+final List<int> listIds = [1, 2, 3, 4, 5, 6];
 
-List<String> listNames = [
+final List<String> listNames = [
   'Dragon Training',
   'Frozen 2',
   'Onward',
@@ -39,7 +46,7 @@ List<String> listNames = [
   'Lab Krixi'
 ];
 
-List<String> listTypes = [
+final List<String> listTypes = [
   'All',
   'Action',
   'Drama',
@@ -48,7 +55,7 @@ List<String> listTypes = [
   'Tail',
 ];
 
-List<String> listImgBackgrounds = [
+final List<String> listImgBackgrounds = [
   AssetHelper.imgDragon,
   AssetHelper.imgFrozen,
   AssetHelper.imgOnward,
@@ -57,9 +64,9 @@ List<String> listImgBackgrounds = [
   AssetHelper.imgSpongebob,
 ];
 
-List<double> listStars = [4.5, 4.7, 4.2, 4.0, 4.5, 3.9];
+final List<double> listStars = [4.5, 4.7, 4.2, 4.0, 4.5, 3.9];
 
-List<String> listImgTrailers = [
+final List<String> listImgTrailers = [
   AssetHelper.imgTrailer1,
   AssetHelper.imgTrailer2,
   AssetHelper.imgMovieBanner,
@@ -101,10 +108,46 @@ List<Movie> addListMovie(List<Movie> genres) {
   for (int i = 0; i < genres.length; i++) {
     genres[i].name = getMovieName(listIds[i], listNames[i]).name;
     genres[i].type = getMovieType(listIds[i], listTypes[i]).type;
-    genres[i].background = getMovieBackground(listIds[i], listImgBackgrounds[i]).background;
+    genres[i].background =
+        getMovieBackground(listIds[i], listImgBackgrounds[i]).background;
     genres[i].star = getMovieStar(listIds[i], listStars[i]).star;
     genres[i].casters = getMovieCasters(listIds[i], listCasters).casters;
     genres[i].trailers = getMovieTrailers(listIds[i], listImgTrailers).trailers;
   }
   return genres;
 }
+
+// Object other
+
+final List<String> days = ['SAT', 'SUN', 'MON', 'TUE'];
+final List<String> times = ['12:20', '13:30', '14:30', '19:00'];
+
+enum TicketStates {
+  idle,
+  active,
+  busy,
+}
+
+final List<TicketStates> dayStates = [
+  TicketStates.active,
+  TicketStates.idle,
+  TicketStates.busy,
+  TicketStates.idle,
+];
+
+final List<TicketStates> dayStates1 = [
+  TicketStates.busy,
+  TicketStates.idle,
+  TicketStates.idle,
+  TicketStates.idle,
+];
+
+final List<TicketStates> dayStates2 = [
+  TicketStates.idle,
+  TicketStates.idle,
+  TicketStates.busy,
+  TicketStates.idle,
+];
+
+final List<String> seatRow = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+final List<String> seatNumber = ['1', '2', '3', '4', '5', '6', '7', '8'];

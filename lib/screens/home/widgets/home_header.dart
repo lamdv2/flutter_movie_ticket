@@ -39,15 +39,14 @@ class HomeHeader extends StatelessWidget {
                 //     builder: (context) => const ProfileScreen(),
                 //   ),
                 // );
-                Navigator.of(context).pushNamed(ProfileScreen.routeName,
-                    arguments: userName);
+                Navigator.of(context)
+                    .pushNamed(ProfileScreen.routeName, arguments: userName);
               },
               child: CircleAvatar(
                 radius: size.height / 24,
-                backgroundImage:
-                const AssetImage(AssetHelper.imgInfo),
+                backgroundImage: const AssetImage(AssetHelper.imgInfo),
               ),
-            )
+            ),
           ],
         ),
       ),

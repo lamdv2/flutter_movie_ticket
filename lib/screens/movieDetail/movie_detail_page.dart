@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:movie_ticket/common/widgets/stateful/list_star_widget.dart';
+import 'package:movie_ticket/common/widgets/stateless/list_star_widget.dart';
 import 'package:movie_ticket/models/movie.dart';
 import 'package:movie_ticket/screens/movieDetail/widgets/about_text_widget.dart';
 import 'package:movie_ticket/screens/movieDetail/widgets/about_title_widget.dart';
-import 'package:movie_ticket/screens/movieDetail/widgets/arrow_back_button.dart';
+import 'package:movie_ticket/common/widgets/stateless/arrow_back_button.dart';
 import 'package:movie_ticket/screens/movieDetail/widgets/background_widget.dart';
 import 'package:movie_ticket/screens/movieDetail/widgets/caster_bar.dart';
 import 'package:movie_ticket/screens/movieDetail/widgets/trailer_bar.dart';
@@ -68,7 +68,7 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                 ),
               ),
             ),
-            const ArrowBackButton(),
+            ArrowBackButton(topPadding: kTop32Padding),
             Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

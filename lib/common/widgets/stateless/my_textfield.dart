@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_ticket/themes/app_colors.dart';
 
 class MyTextField extends StatelessWidget {
   // ignore: prefer_typing_uninitialized_variables
@@ -20,6 +21,9 @@ class MyTextField extends StatelessWidget {
       child: TextField(
         controller: controller,
         obscureText: obscureText,
+        style: const TextStyle(
+          color: AppColors.darkerBackground,
+        ),
         decoration: InputDecoration(
           enabledBorder: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
