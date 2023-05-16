@@ -48,4 +48,5 @@ mixin AssetHelper {
   static const String imgCastTara = 'assets/images/x3/cast_tara.png';
 
   static const String imgSeat = 'assets/images/x3/seat.png';
+  static const String imgLogo = 'assets/images/x3/logo.png';
 }

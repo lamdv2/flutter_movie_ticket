@@ -119,7 +119,7 @@ class _SelectSeatPageState extends State<SelectSeatPage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).pushNamed(CheckOut.routeName);
+                      Navigator.of(context).pushNamed(CheckOut.routeName, arguments: movie);
                     },
                     child: Container(
                       height: 46,

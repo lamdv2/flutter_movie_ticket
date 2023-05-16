@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticket/screens/checkout/check_out.dart';
+import 'package:movie_ticket/screens/checkout/my_ticket.dart';
 import 'package:movie_ticket/screens/home/home_page.dart';
 import 'package:movie_ticket/screens/login/auth_page.dart';
 import 'package:movie_ticket/screens/profile/profile_page.dart';
@@ -16,4 +17,5 @@ final Map<String, WidgetBuilder> routes = {
   AuthPage.routeName: (context) => const AuthPage(),
   SelectSeatPage.routeName: (context) => const SelectSeatPage(),
   CheckOut.routeName: (context) => const CheckOut(),
+  MyTicket.routeName: (context) => const MyTicket(),
 };
